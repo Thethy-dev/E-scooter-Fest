@@ -1,8 +1,5 @@
 
-
 header {
-    width: 99%;
-    height: 120px;
     padding: 10px;
     background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(14, 2, 31, 1) 50%);;
     display: flex;
@@ -24,6 +21,12 @@ header a p {
 
 header a {
     text-decoration: none;
+    transition: 0.5s;
+}
+
+header a p:hover {
+    color: #600ca6;
+    
 }
 
 header .navigation ul{
@@ -52,15 +55,71 @@ body {
     background-color: black; 
 }
 
+main {
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: column;
+}
+
 .the_race img{
-    width: 1300px;
-    height: 800px;
-    position: absolute;
-    left: 50%;
-    up: 50%;
-    transform: translate(-50%);
+    width: 1000px;
+    height: auto; 
+    max-width: 90%; 
+    margin-top: 20px;
 }
 
 .the_race {
-    position: relative;
+    
+    padding: 50px 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #DCC4FF;
+    transition: 0.8s;
+    font-size: 60px;
+    text-align: center;
+}
+
+h1:hover {
+    color: #600ca6;
+}
+
+.about {
+    background-color: #07010d;
+    width: 100%;
+    padding: 80px 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.about h2, p {
+    color: #DCC4FF;
+}
+
+.about h2  {
+    color: #DCC4FF;
+    text-align: center;
+    font-size: 50px;
+} 
+
+.about p {
+    font-size: 22px;
+    width: 500px;
+    text-align: center;
+}
+
+.about .right p {
+    font-size: 35px;
+}
+
+.about .right {
+    padding: 10px;
+    background-color: #0a0112;
+    border: 2px solid #600ca6;
 }
