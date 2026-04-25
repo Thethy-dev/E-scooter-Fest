@@ -10,6 +10,10 @@
   font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     padding: 10px;
     background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(14, 2, 31, 1) 50%);;
@@ -101,6 +105,8 @@ h1:hover {
 .about {
     background-color: #07010d;
     width: 99.9%;
+    border-top: #2c1a47 solid 1.5px;
+    border-bottom: #2c1a47 solid 1.5px;
 }
 
 .about .cards {
@@ -237,16 +243,95 @@ h1:hover {
     font-size: 26px;
 }
 
+.cost {
+    color: var(--text-c);
+    margin-bottom: 40px;
+    border-top: var(--text-c) solid 1.5px;
+    margin-top: 55px;
+}
 
+.cost h2 {
+    text-align: center;
+    font-size: 54px;
+}
 
+.cost .cost-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
 
+.cost .spectator, .participant {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    transition: all 0.4s ease;
+}
 
+.cost .spectator {
+    border: 2px solid #600ca6;
+    border-radius: 10%;
+}
 
+.cost .participant {
+    border: 4px solid #7420b9;
+    border-radius: 11.5%;
+    background-color: #30024456;
+    box-shadow: #8a2cd6 0px 4px 12px;
+}
 
+.cost h3 {
+    font-size: 40px;
+    margin: 5px 0px;
+}
 
+.cost span {
+    font-size: 34px;
+    color:#e0cffa;
+}
 
+.cost li p {
+    font-size: 22px;
+}
 
+.cost button {
+    background-color: #f8e6ff;
+    border-radius: 999px;
+    transition: 0.5s;
+    padding: 10px;
+    width: 350px;
+}
 
+.cost a {
+    text-decoration: none;
+    font-size: 28px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 
+.cost button:hover {
+    background-color: #bcaec2;
+}
 
+.footer {
+    background: linear-gradient(90deg,rgba(27, 7, 51, 1) 0%, rgba(41, 11, 82, 1) 23%, rgba(91, 40, 158, 1) 50%, rgba(31, 0, 71, 1) 80%, rgba(14, 2, 31, 1) 100%);
+}
 
+.footer h2 {
+    color: var(--text-c);
+    font-size: 48px;
+    text-align: center;
+    text-shadow: var(--text-c) 0px 1px 2px;
+}
+
+.footer p {
+    color: var(--text-c);
+    font-size: 24px;
+    text-align: center;
+}
