@@ -4,6 +4,12 @@
     --text-c: #DCC4FF;
 }
 
+* {
+    font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 header {
     padding: 10px;
     background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(14, 2, 31, 1) 50%);;
@@ -109,11 +115,11 @@ h1:hover {
 }
 
 .about .card1, .card2 {
-    padding: 10px;
+    padding: 15px;
     background-color: #0a0112;
     border: 2px solid #600ca6;
     width: 500px;
-    height: 800px;
+    height: 940px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -131,18 +137,18 @@ h1:hover {
 
 .about h2 {
     color: var(--text-c);
-    font-size: 50px;
+    font-size: 65px;
     text-align: center;
 }
 
 .about h3 {
     color: var(--text-c);
-    font-size: 32px;
+    font-size: 38px;
 }
 
 .about p {
     color: var(--text-c);
-    font-size: 18px;
+    font-size: 26px;
     text-align: center;
 }
 
@@ -153,7 +159,7 @@ h1:hover {
 
 .hl p {
     color: var(--text-c);
-    font-size: 18px;
+    font-size: 24px;
     text-align: center;
 }
 
@@ -188,8 +194,8 @@ h1:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 350px;
-    height: 350px;
+    width: 380px;
+    height: 380px;
     transition: all 0.4s ease;
 }
 
@@ -203,7 +209,7 @@ h1:hover {
 
 .hl li {
     color: var(--text-c);
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .hl li span {
