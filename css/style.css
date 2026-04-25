@@ -1,3 +1,8 @@
+:root {
+    --main-bc: rgba(31, 3, 40, 1);
+    --second-bc: #600ca6;
+    --text-c: #DCC4FF;
+}
 
 header {
     padding: 10px;
@@ -15,7 +20,7 @@ header .logo img {
 
 header a p {
     text-decoration: none;
-    color: #DCC4FF;
+    color: var(--text-c);
     font-size: 30px;
 }
 
@@ -25,7 +30,7 @@ header a {
 }
 
 header a p:hover {
-    color: #600ca6;
+    color: var(--second-bc) !important;
     
 }
 
@@ -70,7 +75,6 @@ main {
 }
 
 .the_race {
-    
     padding: 50px 10px; 
     display: flex;
     flex-direction: column;
@@ -90,36 +94,153 @@ h1:hover {
 
 .about {
     background-color: #07010d;
-    width: 100%;
+    width: 99.9%;
+}
+
+.about .cards {
+    background-color: #07010d;
+    width: 90%;
     padding: 80px 20px; 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 40px;
 }
 
-.about h2, p {
-    color: #DCC4FF;
-}
-
-.about h2  {
-    color: #DCC4FF;
-    text-align: center;
-    font-size: 50px;
-} 
-
-.about p {
-    font-size: 22px;
-    width: 500px;
-    text-align: center;
-}
-
-.about .right p {
-    font-size: 35px;
-}
-
-.about .right {
+.about .card1, .card2 {
     padding: 10px;
     background-color: #0a0112;
     border: 2px solid #600ca6;
+    width: 500px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
 }
+
+.about .card1 {
+    margin-left: 100px;
+}
+
+.about img {
+    width: 450px;
+    height: 600px;
+}
+
+.about h2 {
+    color: var(--text-c);
+    font-size: 50px;
+    text-align: center;
+}
+
+.about h3 {
+    color: var(--text-c);
+    font-size: 32px;
+}
+
+.about p {
+    color: var(--text-c);
+    font-size: 18px;
+    text-align: center;
+}
+
+.hl {
+    background-color:  black;
+    width: 99.9%;
+}
+
+.hl p {
+    color: var(--text-c);
+    font-size: 18px;
+    text-align: center;
+}
+
+.hl h2 {
+    color: var(--text-c);
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.hl h3 {
+    color: var(--text-c);
+    font-size: 32px;
+}
+
+.hl .cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hl ul {
+    list-style: none;
+}
+
+.hl .music, .hl .food, .hl .when_where {
+    padding: 25px;
+    background-color: #0a0112;
+    border: 2px solid #600ca6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    transition: all 0.4s ease;
+}
+
+.hl .music:hover, 
+.hl .food:hover, 
+.hl .when_where:hover {
+    border-color: #8a2cd6;
+    box-shadow: #8a2cd6 0px 5px 15px;
+    transform: translateY(-10px);
+}
+
+.hl li {
+    color: var(--text-c);
+    font-size: 20px;
+}
+
+.hl li span {
+    color:#600ca6;
+    margin: 5px;
+}
+
+.hl .music:hover span {
+    color: #dbc7fa;
+    font-size: 33px;
+}
+
+.hl .music span {
+     color: #dcc8fa;
+     font-size: 32px;
+}
+
+.hl .food span {
+    color: #ebf74d;
+     font-size: 20px;
+}
+
+.hl .food:hover span {
+    color: #ecf573;
+    font-size: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
