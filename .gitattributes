@@ -1,2 +1,15 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+*.csproj merge=union
+text eol=lf
+
+# Явно вказати текстові файли
+*.txt text
+*.js text
+*.css text
+*.html text
+
+# Явно вказати бінарні файли
+*.png binary
+*.jpg binary
+*.pdf binary
