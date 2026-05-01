@@ -1,5 +1,5 @@
 :root {
-    --main-bc: rgba(31, 3, 40, 1);
+    --main-bc: rgb(1, 0, 1);
     --second-bc: #600ca6;
     --text-c: #DCC4FF;
 }
@@ -13,6 +13,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 
 header {
     padding: 10px;
@@ -70,12 +71,6 @@ body {
     background-color: black; 
 }
 
-main {
-    display: flex;
-    
-    justify-content: center;
-    flex-direction: column;
-}
 
 .the_race img{
     width: 1000px;
@@ -89,6 +84,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--main-bc);
 }
 
 h1 {
@@ -103,14 +99,14 @@ h1:hover {
 }
 
 .about {
-    background-color: #07010d;
+    background-color: var(--main-bc);
     width: 99.9%;
     border-top: #2c1a47 solid 1.5px;
     border-bottom: #2c1a47 solid 1.5px;
 }
 
 .about .cards {
-    background-color: #07010d;
+    background-color: var(--main-bc);
     width: 90%;
     padding: 80px 20px; 
     display: flex;
@@ -159,7 +155,7 @@ h1:hover {
 }
 
 .hl {
-    background-color:  black;
+    background-color: var(--main-bc);
     width: 99.9%;
 }
 
@@ -242,46 +238,74 @@ h1:hover {
     color: #ecf573;
     font-size: 26px;
 }
+    
+section {
+    min-height: 100px !important;
+}
 
 .cost {
     color: var(--text-c);
     margin-bottom: 40px;
     border-top: var(--text-c) solid 1.5px;
     margin-top: 55px;
+    background-color: var(--main-bc);
 }
 
 .cost h2 {
     text-align: center;
     font-size: 54px;
+    margin-bottom: 30px;
 }
 
 .cost .cost-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 35px;
+    flex-wrap: wrap;
+    padding: 20px 0 30px;
 }
 
-.cost .spectator, .participant {
+.about .card1, .about .card2 {
+    min-height: 940px;
+}
+
+.cost .spectator,
+.cost .participant {
     padding: 25px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 400px;
-    height: 400px;
+    width: calc(50% - 20px);
+    max-width: 420px;
+    min-height: 400px;
     transition: all 0.4s ease;
+}
+
+.cost .spectator:hover,
+.cost .participant:hover {
+    transform: translateY(-20px);
 }
 
 .cost .spectator {
     border: 2px solid #600ca6;
     border-radius: 10%;
+    background-color: #0a0112;
 }
 
 .cost .participant {
     border: 4px solid #7420b9;
     border-radius: 11.5%;
-    background-color: #30024456;
+    background-color: #0a0112;
     box-shadow: #8a2cd6 0px 4px 12px;
+}
+
+@media (max-width: 900px) {
+    .cost .spectator,
+    .cost .participant {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 .cost h3 {
@@ -321,6 +345,9 @@ h1:hover {
 
 .footer {
     background: linear-gradient(90deg,rgba(27, 7, 51, 1) 0%, rgba(41, 11, 82, 1) 23%, rgba(91, 40, 158, 1) 50%, rgba(31, 0, 71, 1) 80%, rgba(14, 2, 31, 1) 100%);
+    padding: 40px 20px;
+    border-top: var(--second-bc) solid 2px;
+    min-height: 180px;
 }
 
 .footer h2 {
@@ -335,3 +362,4 @@ h1:hover {
     font-size: 24px;
     text-align: center;
 }
+
