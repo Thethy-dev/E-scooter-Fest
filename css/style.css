@@ -6,8 +6,8 @@
 
 * {
     font-family: "Indie Flower", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
 }
 
 html {
@@ -19,7 +19,7 @@ html {
 
 header {
     padding: 11px;
-    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(14, 2, 31, 1) 50%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(14, 2, 31, 1) 50%);
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -46,21 +46,22 @@ header a {
 
 header a p:hover {
     color: var(--second-bc) !important;
-    
+
 }
 
-header .navigation ul{
+header .navigation ul {
     display: flex;
     justify-content: flex-start;
     gap: 50px;
     list-style: none;
-    
+
 }
 
-header .tt, .insta {
+header .tt,
+.insta {
     width: 45px;
     height: 45px;
-    
+
 }
 
 .smedia_logo {
@@ -72,7 +73,7 @@ header .tt, .insta {
 }
 
 body {
-    background-color: black; 
+    background-color: black;
 }
 
 main {
@@ -81,15 +82,15 @@ main {
 }
 
 
-.the_race img{
+.the_race img {
     width: 1000px;
-    height: auto; 
-    max-width: 90%; 
+    height: auto;
+    max-width: 90%;
     margin-top: 20px;
 }
 
 .the_race {
-    padding: 50px 10px; 
+    padding: 50px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,7 +118,7 @@ h1:hover {
 .about .cards {
     background-color: var(--main-bc);
     width: 90%;
-    padding: 80px 20px; 
+    padding: 80px 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -125,7 +126,8 @@ h1:hover {
     gap: 40px;
 }
 
-.about .card1, .card2 {
+.about .card1,
+.card2 {
     padding: 15px;
     background-color: #0a0112;
     border: 2px solid #600ca6;
@@ -198,7 +200,9 @@ h1:hover {
     list-style: none;
 }
 
-.hl .music, .hl .food, .hl .when_where {
+.hl .music,
+.hl .food,
+.hl .when_where {
     padding: 25px;
     background-color: #0a0112;
     border: 2px solid #600ca6;
@@ -210,8 +214,8 @@ h1:hover {
     transition: all 0.4s ease;
 }
 
-.hl .music:hover, 
-.hl .food:hover, 
+.hl .music:hover,
+.hl .food:hover,
 .hl .when_where:hover {
     border-color: #8a2cd6;
     box-shadow: #8a2cd6 0px 5px 15px;
@@ -224,7 +228,7 @@ h1:hover {
 }
 
 .hl li span {
-    color:#600ca6;
+    color: #600ca6;
     margin: 5px;
 }
 
@@ -234,20 +238,20 @@ h1:hover {
 }
 
 .hl .music span {
-     color: #dcc8fa;
-     font-size: 32px;
+    color: #dcc8fa;
+    font-size: 32px;
 }
 
 .hl .food span {
     color: #ebf74d;
-     font-size: 20px;
+    font-size: 20px;
 }
 
 .hl .food:hover span {
     color: #ecf573;
-    font-size: 26px;
+    font-size: 20.5px;
 }
-    
+
 section {
     min-height: 100px !important;
 }
@@ -275,7 +279,8 @@ section {
     padding: 20px 0 30px;
 }
 
-.about .card1, .about .card2 {
+.about .card1,
+.about .card2 {
     min-height: 940px;
 }
 
@@ -285,7 +290,7 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: calc(50% - 20px);
+    width: calc(70% - 20px);
     max-width: 420px;
     min-height: 400px;
     transition: all 0.4s ease;
@@ -316,7 +321,7 @@ section {
 
 .cost span {
     font-size: 34px;
-    color:#e0cffa;
+    color: #e0cffa;
 }
 
 .cost li p {
@@ -345,7 +350,7 @@ section {
 }
 
 .footer {
-    background: linear-gradient(90deg,rgba(27, 7, 51, 1) 0%, rgba(41, 11, 82, 1) 23%, rgba(91, 40, 158, 1) 50%, rgba(31, 0, 71, 1) 80%, rgba(14, 2, 31, 1) 100%);
+    background: linear-gradient(90deg, rgba(27, 7, 51, 1) 0%, rgba(41, 11, 82, 1) 23%, rgba(91, 40, 158, 1) 50%, rgba(31, 0, 71, 1) 80%, rgba(14, 2, 31, 1) 100%);
     padding: 40px 20px;
     border-top: var(--second-bc) solid 2px;
     min-height: 180px;
@@ -353,7 +358,7 @@ section {
 
 .footer h2 {
     color: var(--text-c);
-    font-size: 48px;
+    font-size: 44px;
     text-align: center;
     text-shadow: var(--text-c) 0px 1px 2px;
 }
@@ -365,8 +370,8 @@ section {
 }
 
 .menu-button {
-        display: none;
-    }
+    display: none;
+}
 
 .mobile-navigation {
     display: none;
@@ -377,7 +382,7 @@ section {
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
     h1 {
         font-size: 40px;
@@ -406,13 +411,22 @@ section {
         width: 100%;
     }
 
-    .about .card1, .card2 {
+    .about .card1,
+    .about .card2 {
         width: calc(100% - 30px);
         max-width: 100%;
         min-height: auto;
         padding: 15px;
         margin: 0 auto;
         margin-left: 0 !important;
+    }
+
+    .about .card1 {
+        max-height: 750px;
+    }
+
+    .about .card2 {
+        max-height: 820px;
     }
 
     .about img {
@@ -427,8 +441,10 @@ section {
         height: auto;
     }
 
-    .hl .music, .hl .food, .hl .when_where {
-        width: calc(95% - 50px);
+    .hl .music,
+    .hl .food,
+    .hl .when_where {
+        width: calc(85% - 50px);
         max-width: 100%;
         height: auto;
     }
@@ -436,7 +452,7 @@ section {
     .cards {
         flex-direction: column;
         justify-content: center;
-       
+
     }
 
     .the_race {
@@ -468,10 +484,10 @@ section {
         justify-content: center;
         align-items: center;
         width: 100%;
-        gap: 55px;
+        gap: 1rem;
         padding: 11px 5px;
-        background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 36%, rgba(31, 0, 71, 1) 100%);
-        flex-wrap: wrap;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 36%, rgba(31, 0, 71, 1) 100%);
+        flex-wrap: nowrap;
     }
 
     .smedia_logo {
@@ -489,6 +505,12 @@ section {
         cursor: pointer;
         transition: 0.3s;
         text-align: center;
+    }
+
+    .cost .spectator,
+    .cost .participant {
+        
+        max-width: 550px;
     }
 
     .menu-button:hover {
@@ -546,6 +568,13 @@ section {
         transform: translateX(0);
     }
 
+    .footer h2 {
+        font-size: 28px;
+    }
+
+    .footer p {
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 769px) {
