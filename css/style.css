@@ -300,14 +300,6 @@ section {
     box-shadow: #8a2cd6 0px 4px 12px;
 }
 
-@media (max-width: 900px) {
-    .cost .spectator,
-    .cost .participant {
-        width: 100%;
-        max-width: 100%;
-    }
-}
-
 .cost h3 {
     font-size: 40px;
     margin: 5px 0px;
