@@ -12,6 +12,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 
@@ -71,6 +73,11 @@ header .tt, .insta {
 
 body {
     background-color: black; 
+}
+
+main {
+    width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -400,10 +407,61 @@ section {
     }
 
     .about .card1, .card2 {
-        width: 90%;
+        width: calc(100% - 30px);
+        max-width: 100%;
         min-height: auto;
         padding: 15px;
         margin: 0 auto;
+        margin-left: 0 !important;
+    }
+
+    .about img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .the_race img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hl .music, .hl .food, .hl .when_where {
+        width: calc(95% - 50px);
+        max-width: 100%;
+        height: auto;
+    }
+
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+
+    .the_race {
+        padding: 50px 10px;
+        width: 100%;
+    }
+
+    .about {
+        width: 100%;
+        padding: 0;
+    }
+
+    .hl {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .cost {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .footer {
+        width: 100%;
+        padding: 20px 10px;
     }
 
     header {
@@ -411,7 +469,9 @@ section {
         align-items: center;
         width: 100%;
         gap: 55px;
+        padding: 11px 5px;
         background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 36%, rgba(31, 0, 71, 1) 100%);
+        flex-wrap: wrap;
     }
 
     .smedia_logo {
@@ -459,6 +519,7 @@ section {
         align-items: center;
         justify-content: center;
         text-align: center;
+        overflow: hidden;
     }
 
     .menu ul {
