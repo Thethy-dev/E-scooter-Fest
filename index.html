@@ -168,28 +168,5 @@
         <h2>Want to have fun? Join the ESCFEST community!</h2>
         <p>© 2026 E-scooter Fest. All rights reserved.</p>
     </footer>
-    <script>
-        const menuButton = document.querySelector('.menu-button');
-        const menu = document.querySelector('.menu');
-        const menuLinks = menu.querySelectorAll('a');
-
-        // Відкриття/закриття меню при нажатті на кнопку
-        menuButton.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
-
-        // Закриття меню при нажатті на посилання
-        menuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.remove('active');
-            });
-        });
-
-        // Закриття меню при нажатті поза меню
-        document.addEventListener('click', (event) => {
-            if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
-                menu.classList.remove('active');
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
