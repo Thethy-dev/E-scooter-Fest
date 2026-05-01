@@ -1,2 +1,2 @@
 # E-scooter Fest
-
+A fun site for my English classes about my imaginary festival about E-scooter, races and many more...
